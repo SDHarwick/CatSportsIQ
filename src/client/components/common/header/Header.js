@@ -11,7 +11,6 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import {Link} from 'react-router-dom';
-import Payments from '../../payments/Payments';
 import { fetchUserSuccess } from '../../../actions/userActions';
 import Logout from './Logout';
 
@@ -80,8 +79,6 @@ class Header extends Component {
         } else if(this.props.isAuthenticated) {
             return (
                 <span>
-                    <Payments />
-                    <span style={{color:'black', paddingLeft:'5px'}}>Credits: {this.props.credits || 0}</span>
                     <Link to={'/account'}><Button>My Account</Button></Link>
                     <Link to={'/admin'}><Button>Admin</Button></Link>
                     <Logout />
