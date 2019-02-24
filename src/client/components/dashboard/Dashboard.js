@@ -107,7 +107,7 @@ const Dashboard = props => {
           >
             <Grid item xs={12}>
               <Typography variant="display4" color="secondary">
-                Lorem Ipsum
+                Sign Up, Login, or Manage Users
               </Typography>
             </Grid>
 

@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {withStyles} from '@material-ui/core/styles';
 
-// Import custom components
-import MiniDrawer from '../drawer/MiniDrawer';
+
 
 const styles = theme => ({
     root: {
@@ -48,7 +47,7 @@ class MainLayout extends Component {
             <div className={classes.root}>
                 <div className={classes.appFrame}>
                     {/*<Header navDrawerOpen={open} handleToggleDrawer={this.handleToggle}/>*/}
-                    <MiniDrawer navDrawerOpen={open}/>
+                    
                     <main className={classes.content}>
                         {this.props.children}
                     </main>

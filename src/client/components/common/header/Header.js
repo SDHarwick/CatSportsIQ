@@ -68,19 +68,10 @@ class Header extends Component {
 
     renderContent() {
         // const {classes, navDrawerOpen, handleToggleDrawer, accountType, credits, isAuthenticated} = this.props;
-        if (this.props.accountType === 'admin'){
+        if(this.props.isAuthenticated) {
             return (
                 <span>
-                    <Link to={'/account'}><Button>My Account</Button></Link>
-                    <Link to={'/admin'}><Button>Admin</Button></Link>
-                    <Logout />
-                </span>
-            );
-        } else if(this.props.isAuthenticated) {
-            return (
-                <span>
-                    <Link to={'/account'}><Button>My Account</Button></Link>
-                    <Link to={'/admin'}><Button>Admin</Button></Link>
+                    <Link to={'/usermanagement'}><Button>User Management</Button></Link>
                     <Logout />
                 </span>
             );
@@ -110,9 +101,6 @@ class Header extends Component {
                         <Typography type="title" color="inherit" className={classes.flex}>
                             <Link to={'/'}><img className="logo-2" src="https://esdee.netlify.com/public/images/EsDeeLogoReal.png" /></Link>
                         </Typography>
-                        <Link to={'/sites'}><Button>Marketplace</Button></Link>
-                        <Link to={'/blog'}><Button>Blog</Button></Link>
-                        <Link to={'/about'}><Button>About Us</Button></Link>
                         {this.renderContent()} 
                     </Toolbar>
                 </AppBar>
@@ -139,21 +127,5 @@ const mapStateToProps = state => {
         };
     }
 };
-
-// function mapStateToProps({auth, user}) {
-//   return {
-//     auth,
-//     user
-//   };
-// }
-
-
-/**
- * Map the actions to props.
- */
-// const mapDispatchToProps = dispatch => ({
-//     actions: bindActionCreators(Object.assign({}, authService), dispatch),
-//     user: bindActionCreators({fetchUserSuccess: fetchUserSuccess}, dispatch)
-// });
 
 export default connect(mapStateToProps, /*mapDispatchToProps*/ {fetchUserSuccess})(withStyles(styles)(Header));
