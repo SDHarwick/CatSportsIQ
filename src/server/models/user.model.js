@@ -1,5 +1,4 @@
 import bookshelf from '../config/bookshelf';
-import Site from './site.model.js';
 
 /**
  * User model.

@@ -10,7 +10,8 @@
     "client-prod": "PORT=3001 webpack-dev-server",
     "server": "./node_modules/.bin/babel-node src/server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "prod": "concurrently \"npm run server\" \"npm run client-prod\""
+    "prod": "concurrently \"npm run server\" \"npm run client-prod\"",
+    "migrate": "knex migrate:latest"
   },
   "author": {
     "name": "Stephen Harwick",

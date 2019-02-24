@@ -112,12 +112,12 @@ class MiniDrawer extends Component {
 
                 <div className={classes.root}>
                     <Avatar alt="User" className="avatar-2" src=" https://esdee.netlify.com/public/images/avatar5.png" className={classNames(classes.avatar, classes.bigAvatar)}/>
-                    <Typography component="p" className={classes.avatar}>
+                    {/* <Typography component="p" className={classes.avatar}>
                         {this.state && this.state.hasOwnProperty('user') ? (this.state.user.first_name) : 'John'} {this.state && this.state.hasOwnProperty('user') ? (this.state.user.last_name) : 'Doe'}
                     </Typography>
                     <Typography component="span" className={classes.avatar}>
                         {this.state && this.state.hasOwnProperty('user') ? (this.state.user.email) : 'e@mail.com'}
-                    </Typography>
+                    </Typography> */}
                 </div>
                 <div className="box" style={{background: '#eee', padding: '8px 16px'}}>
                     MAIN NAVIGATION
