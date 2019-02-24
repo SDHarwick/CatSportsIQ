@@ -113,260 +113,53 @@ const Dashboard = props => {
 
             <Grid item xs={12}>
               <Typography variant="h4" color="primary.dark">
-                Culpa earum qui, dolorem que quas iste voluptatem reiciendis
-                pariatur rem aut nobis?
+                Sign Up, Login, and then Manage Users
               </Typography>
             </Grid>
             <Grid item xs={12} className={classes.autoMargin}>
-              <Button
-                variant="contained"
-                size="large"
-                color="primary"
-                className={classes.button}
-              >
-                Buy a Business
-              </Button>
-              <Button
-                variant="contained"
-                size="large"
-                color="primary"
-                className={classes.button}
-              >
-                Sell Your Business
-              </Button>
+              <Link to={'/login'}>
+                <Button
+                  variant="contained"
+                  size="large"
+                  color="primary"
+                  className={classes.button}
+                >
+                  Login
+                </Button>
+              </Link>
+              
+              
+              <Link to={'/signup'}>
+                <Button
+                  variant="contained"
+                  size="large"
+                  color="primary"
+                  className={classes.button}
+                >
+                  Sign Up
+                </Button>
+              </Link>
+              
+              
+              <Link to={'/usermanagement'}>
+                <Button
+                  variant="contained"
+                  size="large"
+                  color="primary"
+                  className={classes.button}
+                >
+                  User Management
+                </Button>
+              </Link>
+              
             </Grid>
             <Grid item xs={12} sm={9} className={classes.bottomBorder}>
               <Typography variant="p" color="secondary">
-                Corporis hic nostrum quo nihil aut tempore.
+                Welcome to the App!
               </Typography>
             </Grid>
           </Grid>
         </section>
-
-        <section>
-            <Grid
-              rounded
-              container
-              align="center"
-              spacing={16}
-              className={classes.businessByModel}
-            >
-              <Grid item xs={12}>
-                <Typography
-                  className={classes.sectionHeader}
-                  variant="display3"
-                  color="primary"
-                >
-                  Business by Model
-                </Typography>
-              </Grid>
-              <Grid item xs={6} sm={4}>
-                <Paper className={classes.paper}>
-                  <Typography variant="p" align="justify">
-                    Ipsum
-                  </Typography>
-                </Paper>
-              </Grid>
-              <Grid item xs={6} sm={4}>
-                <Paper className={classes.paper}>
-                  <Typography variant="p" align="justify">
-                    Nobis
-                  </Typography>
-                </Paper>
-              </Grid>
-              <Grid item xs={6} sm={4}>
-                <Paper className={classes.paper}>
-                  <Typography variant="p" align="justify">
-                    Culpa
-                  </Typography>
-                </Paper>
-              </Grid>
-              <Grid item xs={6} sm={4}>
-                <Paper className={classes.paper}>
-                  <Typography variant="p" align="justify">
-                    Voluptatem
-                  </Typography>
-                </Paper>
-              </Grid>
-              <Grid item xs={6} sm={4}>
-                <Paper className={classes.paper}>
-                  <Typography variant="p" align="justify">
-                    Quas
-                  </Typography>
-                </Paper>
-              </Grid>
-              <Grid item xs={6} sm={4}>
-                <Paper className={classes.paper}>
-                  <Typography variant="p" align="justify">
-                    Quas
-                  </Typography>
-                </Paper>
-              </Grid>
-            </Grid>
-        </section>
-
-        <BuyerSellerTabs />
-
-        <Grid
-          container
-          align="left"
-          spacing={40}
-          className={classes.lightBgSection}
-        >
-          <Grid item xs={12}>
-            <Typography
-              className={classes.sectionHeader}
-              variant="display3"
-              color="primary"
-              align="center"
-            >
-              Featured Listings
-            </Typography>
-          </Grid>
-
-          <Grid item xs={12} sm={6} md={3} spacing={40} color="primary.dark">
-            <Typography component="p" variant="headline" color="secondary">
-              Lorem Ipsum
-            </Typography>
-            <Typography component="p" variant="subheading" color="secondary">
-              $99,999
-            </Typography>
-            <Typography component="p" variant="body1" align="justify">
-              Culpa earum qui, doloremque quas iste voluptatem reiciendis pariatur rem aut nobis? Culpa earum qui, doloremque quas iste voluptatem reiciendi pariatur rem aut nobis?
-            </Typography>
-          </Grid>
-
-          <Grid item xs={12} sm={6} md={3} color="primary.dark">
-            <Typography component="p" variant="headline" color="secondary">
-              Lorem Ipsum
-            </Typography>
-            <Typography component="p" variant="subheading" color="secondary">
-              $99,999
-            </Typography>
-            <Typography component="p" variant="body1" align="justify">
-              Culpa earum qui, doloremque quas iste voluptatem reiciendis pariatur rem aut nobis? Culpa earum qui, doloremque quas iste voluptatem reiciendi pariatur rem aut nobis?
-            </Typography>
-          </Grid>
-
-          <Grid item xs={12} sm={6} md={3} color="primary.dark">
-            <Typography component="p" variant="headline" color="secondary">
-              Lorem Ipsum
-            </Typography>
-            <Typography component="p" variant="subheading" color="secondary">
-              $99,999
-            </Typography>
-            <Typography component="p" variant="body1" align="justify">
-              Culpa earum qui, doloremque quas iste voluptatem reiciendis pariatur rem aut nobis? Culpa earum qui, doloremque quas iste voluptatem reiciendi pariatur rem aut nobis?
-            </Typography>
-          </Grid>
-
-          <Grid item xs={12} sm={6} md={3} color="primary.dark">
-            <Typography component="p" variant="headline" color="secondary">
-              Lorem Ipsum
-            </Typography>
-            <Typography component="p" variant="subheading" color="secondary">
-              $99,999
-            </Typography>
-            <Typography component="p" variant="body1" align="justify">
-              Culpa earum qui, doloremque quas iste voluptatem reiciendis pariatur rem aut nobis? Culpa earum qui, doloremque quas iste voluptatem reiciendi pariatur rem aut nobis?
-            </Typography>
-          </Grid>
-
-        </Grid>
-
-        <Grid
-          rounded
-          container
-          direction="row"
-          justify="center"
-          alignItems="center"
-          spacing={24}
-          className={classes.darkBgSection}
-        >
-          <Grid item xs={12} className={classes.darkBgSection}>
-            <Typography
-              className={classes.darkBGSectionHeader}
-              variant="display3"
-              align="center"
-            >
-              Testimonials
-            </Typography>
-          </Grid>
-
-          <Grid item sm={11} md={4}>
-            <Card className={classes.card}>
-              <CardContent>
-                <Typography component="p" align="justify">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Veniam neque exercitationem delectus laudantium maxime at, a
-                  sed distinctio doloremque placeat eos magni fugiat minima,
-                  animi obcaecati! Deserunt vitae dignissimos similique.
-                </Typography>
-                <Typography variant="headline" align="right" color="secondary">
-                  Name {bullet} Position {bullet} Company
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-
-          <Grid item sm={11} md={4}>
-            <Card className={classes.card}>
-              <CardContent>
-                <Typography component="p" align="justify">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Veniam neque exercitationem delectus laudantium maxime at, a
-                  sed distinctio doloremque placeat eos magni fugiat minima,
-                  animi obcaecati! Deserunt vitae dignissimos similique.
-                </Typography>
-                <Typography variant="headline" align="right" color="secondary">
-                  Name {bullet} Position {bullet} Company
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-
-          <Grid item sm={11} md={4}>
-            <Card className={classes.card}>
-              <CardContent>
-                <Typography component="p" variant="body1" align="justify">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Veniam neque exercitationem delectus laudantium maxime at, a
-                  sed distinctio doloremque placeat eos magni fugiat minima,
-                  animi obcaecati! Deserunt vitae dignissimos similique.
-                </Typography>
-                <Typography variant="headline" align="right" color="secondary">
-                  Name {bullet} Position {bullet} Company
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-
-        </Grid>
-
-        <Grid container align="center" className={classes.paddingBottom}>
-          <Grid item xs={12} className={classes.sectionHeader}>
-            <Typography
-              variant="h6"
-              color="primary.dark"
-              className={classes.sectionHeader}
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus animi culpa doloremque reiciendis quam cum commodi!
-            </Typography>
-          </Grid>
-
-          <Grid item xs={12}>
-            <Button
-              variant="contained"
-              size="large"
-              color="primary"
-              className={classes.button}
-            >
-              <Link to={'/about'}>About Us
-              </Link>
-            </Button>
-          </Grid>
-        </Grid>
     </div>
 )};
 
