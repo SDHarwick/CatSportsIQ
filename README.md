@@ -37,8 +37,8 @@ By default, your root password is empty. So press `ENTER` and you will log into 
 
 ```
  > ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
- > CREATE DATABASE SD_DB;
- > USE SD_DB;
+ > CREATE DATABASE CATSPORT_IQ;
+ > USE CATSPORT_IQ;
 ```
 
 On the command prompt run the following commands:
