@@ -6,9 +6,6 @@ import {Link} from 'react-router-dom';
 import {AddShoppingCart, ThumbUp, Assessment, Face} from '@material-ui/icons';
 import Button from '@material-ui/core/Button';
 
-import SummaryBox from './SummaryBox';
-import Product from './Product';
-import BuyerSellerTabs from './BuyerSellerTabs';
 import theme from '../../index';
 import { withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";

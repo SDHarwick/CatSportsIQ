@@ -1,4 +1,4 @@
-import { FETCH_USER_SUCCESS } from '../constants/actionType';
+import { FETCH_USER_SUCCESS, FETCH_USERS_SUCCESS } from '../constants/actionType';
 
 let initialState = {
   user: {},

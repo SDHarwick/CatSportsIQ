@@ -91,6 +91,7 @@ export function update(req, res) {
                 first_name: req.body.first_name || user.get('first_name'),
                 last_name: req.body.last_name || user.get('last_name'),
                 email: req.body.email || user.get('email'),
+                status: req.body.status || user.get('status'),
                 credits: req.body.credits || user.get('credits')
             })
                 .then(() => res.json({
@@ -111,11 +112,11 @@ export function update(req, res) {
 }
 
 
-export function addCredits(req, res) {
+export function userPsuedoDelete(req, res) {
     User.forge({id: req.params.id})
         .fetch({require: true})
         .then(user => user.save({
-                credits: req.body.credits || user.get('credits') + 1
+                status: 1
             })
                 .then(() => res.json({
                         error: false,
