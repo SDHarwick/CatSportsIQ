@@ -52,16 +52,18 @@ On the command prompt run the following commands:
  Example configuration:
 
 ```
-APP_PORT=3000
-APP_HOST=127.0.0.1
+PORT=8080
+HOST=127.0.0.1
 
 NODE_ENV = development
+
+API_URL = http://localhost:8080
 
 DB_CLIENT=mysql
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=root
-DB_NAME=SD_DB
+DB_NAME=CATSPORT_IQ
 DB_PORT=3306
 
 TOKEN_SECRET_KEY=secretkeyforjsonwebtoken

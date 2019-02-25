@@ -14,6 +14,7 @@ import NotFound from '../components/error/NotFound';
 import LoginForm from '../containers/auth/LoginContainer';
 import SignUpForm from '../containers/auth/SignUpContainer';
 import Dashboard from '../containers/dashboard/DashboardContainer';
+import UserManagementContainer from '../containers/userManagement/userManagementContainer';
 import AuthenticatedRoute from './AuthenticatedRoute';
 
 const Router = () => (
@@ -25,6 +26,7 @@ const Router = () => (
                 <Route exact path="/login" component={LoginForm}/>
                 <Route path="/signup" component={SignUpForm}/>
                 <Route exact path="/" component={Dashboard}/>
+                <Route exact path="/usermanagement" component={UserManagementContainer}/>
                 <Route component={NotFound}/>
             </Switch>
             </MainLayout>
