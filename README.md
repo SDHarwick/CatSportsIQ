@@ -44,8 +44,8 @@ By default, your root password is empty. So press `ENTER` and you will log into 
 On the command prompt run the following commands:
 
 ``` 
- $ git clone https://github.com/SDHarwick/EsDee.git
- $ cd EsDee
+ $ git clone https://github.com/SDHarwick/CatSportsIQ.git
+ $ cd CatSportsIQ
  $ cp .env.example .env (edit it with your secret key and database information)
 ```
 
@@ -76,13 +76,16 @@ Then run:
 ```
  $ npm install
  $ npm run migrate
+ $ knex seed:run
  ```
+
+These commands will install node modules, then set up your MySQL DB with the correct schema, and then seed the DB with mock data
+
 
  Finally, start and build the application:
  
 ```
- $ npm run build (For development)
- $ npm run build:prod (For production)
+ $ npm run dev (For development)
 ```
 
 List of NPM Commands:
